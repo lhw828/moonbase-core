@@ -1,3 +1,4 @@
+depends pkgconf
 depends automake
 depends cracklib
 depends libtool

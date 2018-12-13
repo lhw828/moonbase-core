@@ -1,23 +1,23 @@
           MODULE=timezone-data
-           TZONE=c
-         VERSION=2017$TZONE
+           TZONE=g
+         VERSION=2018$TZONE
           SOURCE=tzdata$VERSION.tar.gz
          SOURCE2=tzcode$VERSION.tar.gz
-         SOURCE3=$MODULE-2017c-makefile.patch
-   SOURCE_URL[0]=$MIRROR_URL
-   SOURCE_URL[1]=http://www.iana.org/time-zones/repository/releases
-  SOURCE2_URL[0]=$MIRROR_URL
-  SOURCE2_URL[1]=http://www.iana.org/time-zones/repository/releases
+         SOURCE3=$MODULE-2018b-makefile.patch
+   SOURCE_URL[0]=https://www.iana.org/time-zones/repository/releases
+   SOURCE_URL[1]=$MIRROR_URL
+  SOURCE2_URL[0]=http://www.iana.org/time-zones/repository/releases
+  SOURCE2_URL[1]=$MIRROR_URL
   SOURCE3_URL[0]=$PATCH_URL
-      SOURCE_VFY=sha256:d6543f92a929826318e2f44ff3a7611ce5f565a43e10250b42599d0ba4cbd90b
-     SOURCE2_VFY=sha256:81e8b4bc23e60906640c266bbff3789661e22f0fa29fe61b96ec7c2816c079b7
-     SOURCE3_VFY=sha256:d15f26497d7607954a41895695a55a6f7fc67bef827369fc96bdd79c51a77b39
+      SOURCE_VFY=sha256:02dfde534872f6513ae4553a3388fdae579441e31b862ea99170dfc447f46a16
+     SOURCE2_VFY=sha256:aa53f4fb6570f02081be61dc11ade19ea5a280c23822a5b4016ce0c6be23c427
+     SOURCE3_VFY=sha256:279d99c676758f918fe061cc64791123a109f85f1ddfdf677593999ae47d8877
         WEB_SITE=ftp://munnari.oz.au/pub
          ENTERED=20070203
-         UPDATED=20171030
+         UPDATED=20181029
            SHORT="Timezone data and utilities"
 
 cat << EOF
-Timezone-data contains the timezone data (/usr/share/zoneinfo/*) and
-various timezone related utilities (tzselect/zic/zdump).
+Timezone-data contains the timezone data (/usr/share/zoneinfo/*) and various
+timezone related utilities (tzselect/zic/zdump).
 EOF
